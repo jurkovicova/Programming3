@@ -1,12 +1,13 @@
 import java.awt.*;
-public class Circle {
-    private int rad; // Fields
-    private Point pos;
-    private Color col;
-    public Rect(Point initPos, Color col, int width, int height){ // The constructor
-        w=width; // Initialize fields
-        hi=height;
-        this.col=col;
+public class Rect extends Shape {
+    private int width;
+    private int height;// Fields
+
+    public Rect(Point initPos, Color col, int w, int h){ // The constructor
+        super(initPos, col);
+        width=w; // Initialize fields
+        height=h;
+
     }
     public void draw(Graphics g) { // A method that draws the object in g
         g.setColor(col);
