@@ -2,7 +2,7 @@ package Shapes;
 
 import java.awt.*;
 public class Circle extends Shape {
-    private int r; // Fields
+    private final int r; // Fields
 
     public Circle(Point initPos, Color col, int r){
         super(initPos, col); // The constructor
